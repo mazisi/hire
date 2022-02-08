@@ -17,7 +17,7 @@ class CreateReviewsTable extends Migration
             $table->id();
             $table->foreignId('qoute_id')->constrained()->onDelete('cascade');
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
-            $table->enum('rating',[1,2,3,4,5]);
+            $table->enum('rating',['1','2','3','4','5']);
             $table->string('message');
             $table->timestamps();
         });
