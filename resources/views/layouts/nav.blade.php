@@ -70,6 +70,7 @@
 						<div class="header-notifications-trigger">
 							<a href="#"><i class="icon-feather-bell"></i><span>4</span></a>
 						</div>
+						
 
 					
 
