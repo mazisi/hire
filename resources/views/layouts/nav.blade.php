@@ -22,6 +22,7 @@
 					<li><a href="{{ route('home')}}" class="current">Dashboard</a>
 						
 					</li>
+					{{ dd(auth()->id())}}
 					@endauth
 
                          <!-- Authentication Links -->
