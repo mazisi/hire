@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class QuoteField extends Model
 {
     use HasFactory;
+
+    
+    public function qoute(){
+
+        return $this->belongsTo(Quote::class);
+     }
 }

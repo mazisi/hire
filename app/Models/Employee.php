@@ -8,4 +8,26 @@ use Illuminate\Database\Eloquent\Model;
 class Employee extends Model
 {
     use HasFactory;
+
+    public function user(){
+        return $this->belongsTo(user::class);
+    }
+
+    public function quotes(){
+
+        return $this->hasMany(Quote::class);
+     }
+
+     public function bids(){
+
+        return $this->hasMany(Bid::class);
+     }
+     public function employee_payment(){
+
+        return $this->hasMany(EmployeePayment::class);
+     }
+
+     
+
+    
 }
