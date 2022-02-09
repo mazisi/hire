@@ -41,7 +41,7 @@
 
 					
 				<!-- Form -->
-				<form method="POST" action="{{ route('register') }}">
+				<form method="POST" action="{{ route('register') }}" class="mb-5">
                     @csrf
 
 					<div class="input-with-icon-left">
