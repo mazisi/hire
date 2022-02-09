@@ -22,7 +22,7 @@
 					<li><a href="{{ route('home')}}" class="current">Dashboard</a>
 						
 					</li>
-					{{ dd(auth()->id())}}
+					
 					@endauth
 
                          <!-- Authentication Links -->
@@ -97,7 +97,7 @@
 						<ul class="user-menu-small-nav">
 							<li><a href="dashboard.html"><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
 							<li><a href="dashboard-settings.html"><i class="icon-material-outline-settings"></i> Settings</a></li>
-							<li><a href="dashboard-settings.html"><i class="icon-material-outline-settings"></i> Settings</a></li>
+							
 							<li>
 								
 								
