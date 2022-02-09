@@ -16,7 +16,7 @@ class Quote extends Model
         return $this->belongsTo(Job::class);
      }
 
-     public function user(){
+     public function employee(){
 
         return $this->belongsTo(User::class);
      }

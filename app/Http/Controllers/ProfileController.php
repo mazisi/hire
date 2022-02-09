@@ -16,7 +16,10 @@ class ProfileController extends Controller
     public function index()
     {
         $user = User::find(Auth()->id());
-
+        $name  = explode(" ", $user->name);
+        $user['first_name']  = $name[0];
+        $user['last_name']  = $name[1];
+        
         return view('profile', compact('user'));
     }
 
