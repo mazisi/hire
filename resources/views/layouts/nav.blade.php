@@ -23,7 +23,15 @@
 						
 					</li>
 					
+					
 					@endauth
+
+					<li><a href="{{ route('jobs')}}" class="current">Find Jobs</a>
+						
+					</li>
+					<li><a href="{{ route('tradesman')}}" class="current"> Find Tradesman</a>
+						
+					</li>
 
                          <!-- Authentication Links -->
                          @guest

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\EmployeesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,9 +22,20 @@ Route::get('/', function () {
 
 Auth::routes(['verify'=>true]);
  
+// Jobs
+
+Route::get('/jobs', [JobsController::class, 'index'])->name('jobs');
+
+// Tradesman
+
+Route::get('/tradesman', [EmployeesController::class, 'index'])->name('tradesman');
+
+
 Route::group(['middleware'=>['auth','verified']], function(){
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 //user profile 
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
+
+
 });
