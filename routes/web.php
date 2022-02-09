@@ -2,7 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\JobsController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\MessagesController;
 use App\Http\Controllers\EmployeesController;
 
 /*
@@ -37,5 +39,13 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 //user profile 
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 
+
+// Tradesman
+Route::get('/massages', [MessagesController::class, 'index'])->name('messages');
+
+
+// Jobs
+
+Route::get('/jobs/create', [JobsController::class, 'create'])->name('create_jobs');
 
 });
