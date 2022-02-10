@@ -20,7 +20,7 @@
 
 						<ul data-submenu-title="Start">
 							<li class="active"><a href="{{ route('home')}}"><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
-							<li><a href="{{ route('messages')}}"><i class="icon-material-outline-question-answer"></i> Messages <span class="nav-tag">2</span></a></li>
+							<li><a href="{{ route('chats')}}"><i class="icon-material-outline-question-answer"></i> Messages <span class="nav-tag">2</span></a></li>
 						
 						</ul>
 						
@@ -31,9 +31,11 @@
 									<li><a href="dashboard-post-a-job.html">Post a Job</a></li>
 								</ul>	
 							</li>
-							<li><a href="#"><i class="icon-material-outline-assignment"></i> Tasks</a>
+							<li><a href="#"><i class="icon-material-outline-assignment"></i> Bids</a>
 								<ul>
-									<li><a href="dashboard-manage-tasks.html">Manage Tasks <span class="nav-tag">2</span></a></li>
+									<li><a href="/tradesman/all-bids">My Bids <span class="nav-tag">2</span></a></li>
+									<li><a href="/tradesman/accepted-bids">Accepted Bids <span class="nav-tag">9</span></a></li>
+
 									<li><a href="dashboard-manage-bidders.html">Manage Bidders</a></li>
 									<li><a href="dashboard-my-active-bids.html">My Active Bids <span class="nav-tag">4</span></a></li>
 									<li><a href="dashboard-post-a-task.html">Post a Task</a></li>

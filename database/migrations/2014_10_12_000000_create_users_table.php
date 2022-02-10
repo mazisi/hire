@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('account_number')->nullable();
             $table->string('account_name')->nullable();
             $table->string('branch_code')->nullable();
+            $table->enum('default_role',["admin","agent","employer","employee"]);
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
