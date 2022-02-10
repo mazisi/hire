@@ -8,7 +8,7 @@
 
 <div class="dashboard-container" style="height: 287px;">
 
-		<!-- Dashboard Sidebar
+	<!-- Dashboard Sidebar
 	================================================== -->
 	@include('layouts.sidebar')
 	<!-- Dashboard Sidebar / End -->

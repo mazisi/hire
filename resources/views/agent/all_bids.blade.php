@@ -8,27 +8,27 @@
 
 <div class="dashboard-container" style="height: 287px;">
 
-		<!-- Dashboard Sidebar
+	<!-- Dashboard Sidebar
 	================================================== -->
-	@include('layouts.sidebar')
+		@include('layouts.sidebar')
 	<!-- Dashboard Sidebar / End -->
 
 
 	<!-- Dashboard Content
 	================================================== -->
-	<div class="dashboard-content-container" data-simplebar="init" style="height: 116px;"><div class="simplebar-track vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="visibility: visible; top: 0px; height: 25px;"></div></div><div class="simplebar-track horizontal" style="visibility: visible;"><div class="simplebar-scrollbar" style="visibility: visible; left: 0px; width: 25px;"></div></div><div class="simplebar-scroll-content" style="padding-right: 17px; margin-bottom: -34px;"><div class="simplebar-content" style="padding-bottom: 17px; margin-right: -17px;">
+	<div class="dashboard-content-container" data-simplebar="init" style="height: 116px;"><div class="simplebar-track vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="visibility: visible; top: 0px; height: 25px;"></div></div><div class="simplebar-track horizontal" style="visibility: visible;"><div class="simplebar-scrollbar" style="visibility: visible; left: 0px; width: 25px;"></div></div><div class="simplebar-scroll-content" style="padding-right: 20px; margin-bottom: -20px;"><div class="simplebar-content" style="padding-bottom: 20px;">
 		<div class="dashboard-content-inner" style="min-height: 116px;">
 			
 			<!-- Dashboard Headline -->
 			<div class="dashboard-headline">
-				<h3>Manage Tasks</h3>
+				<h3>My Bids</h3>
 
 				<!-- Breadcrumbs -->
 				<nav id="breadcrumbs" class="dark">
 					<ul>
 						<li><a href="#">Home</a></li>
 						<li><a href="#">Dashboard</a></li>
-						<li>Manage Tasks</li>
+						<li>Manage Bids</li>
 					</ul>
 				</nav>
 			</div>
@@ -42,42 +42,41 @@
 
 						<!-- Headline -->
 						<div class="headline">
-							<h3><i class="icon-material-outline-assignment"></i> My Tasks</h3>
+							<h3><i class="icon-material-outline-business-center"></i> My Job Listings</h3>
 						</div>
 
 						<div class="content">
 							<ul class="dashboard-box-list">
 								<li>
 									<!-- Job Listing -->
-									<div class="job-listing width-adjustment">
+									<div class="job-listing">
 
 										<!-- Job Listing Details -->
 										<div class="job-listing-details">
 
+											<!-- Logo -->
+<!-- 											<a href="#" class="job-listing-company-logo">
+												<img src="images/company-logo-05.png" alt="">
+											</a> -->
+
 											<!-- Details -->
 											<div class="job-listing-description">
-												<h3 class="job-listing-title"><a href="#">Design a Landing Page</a> <span class="dashboard-status-button yellow">Expiring</span></h3>
+												<h3 class="job-listing-title"><a href="#">Frontend React Developer</a> <span class="dashboard-status-button green">Pending Approval</span></h3>
 
 												<!-- Job Listing Footer -->
 												<div class="job-listing-footer">
 													<ul>
-														<li><i class="icon-material-outline-access-time"></i> 23 hours left</li>
+														<li><i class="icon-material-outline-date-range"></i> Posted on 10 July, 2019</li>
+														<li><i class="icon-material-outline-date-range"></i> Expiring on 10 August, 2019</li>
 													</ul>
 												</div>
 											</div>
 										</div>
 									</div>
-									
-									<!-- Task Details -->
-									<ul class="dashboard-task-info">
-										<li><strong>3</strong><span>Bids</span></li>
-										<li><strong>$22</strong><span>Avg. Bid</span></li>
-										<li><strong>$15 - $30</strong><span>Hourly Rate</span></li>
-									</ul>
 
 									<!-- Buttons -->
 									<div class="buttons-to-right always-visible">
-										<a href="dashboard-manage-bidders.html" class="button ripple-effect"><i class="icon-material-outline-supervisor-account"></i> Manage Bidders <span class="button-info">3</span></a>
+										<a href="dashboard-manage-candidates.html" class="button ripple-effect"><i class="icon-material-outline-supervisor-account"></i> Manage Candidates <span class="button-info">0</span></a>
 										<a href="#" class="button gray ripple-effect ico" data-tippy-placement="top" data-tippy="" data-original-title="Edit"><i class="icon-feather-edit"></i></a>
 										<a href="#" class="button gray ripple-effect ico" data-tippy-placement="top" data-tippy="" data-original-title="Remove"><i class="icon-feather-trash-2"></i></a>
 									</div>
@@ -85,35 +84,60 @@
 
 								<li>
 									<!-- Job Listing -->
-									<div class="job-listing width-adjustment">
+									<div class="job-listing">
 
 										<!-- Job Listing Details -->
 										<div class="job-listing-details">
 
 											<!-- Details -->
 											<div class="job-listing-description">
-												<h3 class="job-listing-title"><a href="#">Food Delivery Mobile Application</a></h3>
+												<h3 class="job-listing-title"><a href="#">Full Stack PHP Developer</a> <span class="dashboard-status-button yellow">Expiring</span></h3>
 
 												<!-- Job Listing Footer -->
 												<div class="job-listing-footer">
 													<ul>
-														<li><i class="icon-material-outline-access-time"></i> 6 days, 23 hours left</li>
+														<li><i class="icon-material-outline-date-range"></i> Posted on 28 June, 2019</li>
+														<li><i class="icon-material-outline-date-range"></i> Expiring on 28 July, 2019</li>
+													</ul>
+												</div>
+											</div>
+
+										</div>
+									</div>
+
+									<!-- Buttons -->
+									<div class="buttons-to-right always-visible">
+										<a href="dashboard-manage-candidates.html" class="button ripple-effect"><i class="icon-material-outline-supervisor-account"></i> Manage Candidates <span class="button-info">3</span></a>
+										<a href="#" class="button gray ripple-effect ico" data-tippy-placement="top" data-tippy="" data-original-title="Edit"><i class="icon-feather-edit"></i></a>
+										<a href="#" class="button gray ripple-effect ico" data-tippy-placement="top" data-tippy="" data-original-title="Remove"><i class="icon-feather-trash-2"></i></a>
+									</div>
+								</li>
+
+								<li>
+									<!-- Job Listing -->
+									<div class="job-listing">
+
+										<!-- Job Listing Details -->
+										<div class="job-listing-details">
+
+											<!-- Details -->
+											<div class="job-listing-description">
+												<h3 class="job-listing-title"><a href="#">Node.js Developer</a> <span class="dashboard-status-button red">Expired</span></h3>
+
+												<!-- Job Listing Footer -->
+												<div class="job-listing-footer">
+													<ul>
+														<li><i class="icon-material-outline-date-range"></i> Posted on 16 May, 2019</li>
 													</ul>
 												</div>
 											</div>
 										</div>
 									</div>
 
-									<!-- Task Details -->
-									<ul class="dashboard-task-info">
-										<li><strong>3</strong><span>Bids</span></li>
-										<li><strong>$3,200</strong><span>Avg. Bid</span></li>
-										<li><strong>$2,500 - $4,500</strong><span>Fixed Price</span></li>
-									</ul>
-
 									<!-- Buttons -->
 									<div class="buttons-to-right always-visible">
-										<a href="dashboard-manage-bidders.html" class="button ripple-effect"><i class="icon-material-outline-supervisor-account"></i> Manage Bidders <span class="button-info">3</span></a>
+										<a href="dashboard-manage-candidates.html" class="button ripple-effect"><i class="icon-material-outline-supervisor-account"></i> Manage Candidates <span class="button-info">7</span></a>
+										<a href="#" class="button dark ripple-effect"><i class="icon-feather-rotate-ccw"></i> Refresh</a>
 										<a href="#" class="button gray ripple-effect ico" data-tippy-placement="top" data-tippy="" data-original-title="Edit"><i class="icon-feather-edit"></i></a>
 										<a href="#" class="button gray ripple-effect ico" data-tippy-placement="top" data-tippy="" data-original-title="Remove"><i class="icon-feather-trash-2"></i></a>
 									</div>

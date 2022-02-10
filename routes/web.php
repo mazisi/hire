@@ -46,14 +46,31 @@ Route::prefix('tradesman')->group(function(){
 Route::get('jobs', function(){ return view('tradesman.jobs');});
 Route::get('all-bids', function(){ return view('tradesman.all_bids');});
 Route::get('accepted-bids', function(){ return view('tradesman.accepted_bids');});
-
 Route::get('all-quotes', function(){ return view('tradesman.all_quotes');});
+Route::get('quote', function(){ return view('tradesman.quote');});
 Route::get('accepted-jobs', function(){ return view('tradesman.accepted_jobs');});
 
 
 });
 // Employer
 
+Route::prefix('employer')->group(function(){
 Route::get('/jobs/create', [JobsController::class, 'create'])->name('create_jobs');
+Route::get('jobs', function(){ return view('employer.jobs');});
+Route::get('all-bids', function(){ return view('employer.all_bids');});
+Route::get('bid', function(){ return view('employer.bid');});
+Route::get('quotes', function(){ return view('employer.accepted_jobs');});
+Route::get('quote', function(){ return view('employer.quote');});
+});
 
+// Agent 
+Route::prefix('agent')->group(function(){
+    Route::get('jobs', function(){ return view('agent.jobs');});
+    Route::get('all-bids', function(){ return view('agent.all_bids');});
+    Route::get('accepted-bids', function(){ return view('agent.accepted_bids');});
+    Route::get('all-quotes', function(){ return view('agent.all_quotes');});
+    Route::get('accepted-jobs', function(){ return view('agent.accepted_jobs');});
+    
+    
+    });
 });
