@@ -8,7 +8,10 @@
 
 <div class="dashboard-container" style="height: 287px;">
 
+		<!-- Dashboard Sidebar
+	================================================== -->
 	@include('layouts.sidebar')
+	<!-- Dashboard Sidebar / End -->
 
 
 	<div class="dashboard-content-container" data-simplebar="init" style="height: 302px;"><div class="simplebar-track vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="visibility: visible; top: 0px; height: 86px;"></div></div><div class="simplebar-track horizontal" style="visibility: visible;"><div class="simplebar-scrollbar" style="visibility: visible; left: 0px; width: 25px;"></div></div><div class="simplebar-scroll-content" style="padding-right: 20px; margin-bottom: -20px;"><div class="simplebar-content" style="padding-bottom: 20px;">
