@@ -47,7 +47,7 @@
 				</div>
 					
 				<!-- Form -->
-                <form method="POST" action="{{ route('login') }}">
+                <form method="POST" action="{{ route('login') }}" class="mb-5">
                     @csrf
 					<div class="input-with-icon-left">
 						<i class="icon-material-baseline-mail-outline"></i>

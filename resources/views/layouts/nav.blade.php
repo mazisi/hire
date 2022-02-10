@@ -23,7 +23,18 @@
 						
 					</li>
 					
+					
 					@endauth
+
+					<li><a href="{{ route('jobs')}}" class="current">Find Jobs</a>
+						
+					</li>
+					<li><a href="{{ route('tradesman')}}" class="current"> Find Tradesman</a>
+						
+					</li>
+					<li><a href="{{ route('create_jobs')}}" class="current"> Post Job</a>
+						
+					</li>
 
                          <!-- Authentication Links -->
                          @guest
@@ -95,8 +106,8 @@
 							
 						
 						<ul class="user-menu-small-nav">
-							<li><a href="dashboard.html"><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
-							<li><a href="dashboard-settings.html"><i class="icon-material-outline-settings"></i> Settings</a></li>
+							<li><a href="{{ route('home')}}"><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
+							<li><a href="{{ route('profile')}}"><i class="icon-material-outline-settings"></i> Profile</a></li>
 							
 							<li>
 								
@@ -138,5 +149,3 @@
 	<!-- Header / End -->
 
 </header>
-<div class="clearfix"></div>
-<!-- Header Container / End -->
