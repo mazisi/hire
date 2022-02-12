@@ -20,10 +20,10 @@ class CreateUsersTable extends Migration
             $table->string('contact_number');
             $table->string('email')->unique();
             $table->text('address');
-            $table->string('contact_number');
             $table->string('account_number');
             $table->string('account_name');
             $table->string('branch_code');
+            $table->string('slug');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();

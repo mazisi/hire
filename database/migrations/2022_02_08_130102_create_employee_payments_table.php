@@ -17,6 +17,7 @@ class CreateEmployeePaymentsTable extends Migration
             $table->id();
             $table->foreignId('payment_id')->constrained()->onDelete('cascade');
             $table->string('amount');
+            $table->string('slug');
             $table->timestamps();
         });
     }

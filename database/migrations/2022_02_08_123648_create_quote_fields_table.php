@@ -19,6 +19,7 @@ class CreateQuoteFieldsTable extends Migration
             $table->string('item_name');
             $table->string('quantity');
             $table->string('unit_price');
+            $table->string('slug');
             $table->timestamps();
         });
     }

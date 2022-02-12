@@ -19,6 +19,7 @@ class CreateBidsTable extends Migration
             $table->foreignId('job_id')->constrained()->onDelete('cascade');
             $table->text('note');
             $table->enum('status',['accepted','declined']);
+            $table->string('slug');
             $table->timestamps();
         });
     }

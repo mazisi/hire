@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class JobDocuments extends Model
 {
     use HasFactory;
+    protected $guarded = [];
+
+    public function jobs()
+    {
+        return $this->belongsTo(Job::class);
+    }
 }

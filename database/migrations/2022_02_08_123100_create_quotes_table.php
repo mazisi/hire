@@ -19,6 +19,7 @@ class CreateQuotesTable extends Migration
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->text('description');
             $table->date('awarded_at');
+            $table->string('slug');
             $table->timestamps();
         });
     }

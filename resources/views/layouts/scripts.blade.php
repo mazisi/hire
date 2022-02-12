@@ -16,6 +16,7 @@
 <script src="{{ asset('assets/js/custom.js')}}"></script>
 
 
+
 <script>
 // Snackbar for user status switcher
 $('#snackbar-user-status label').click(function() { 

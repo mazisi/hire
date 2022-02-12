@@ -17,6 +17,7 @@ class CreateJobDocumentsTable extends Migration
             $table->id();
             $table->foreignId('job_id')->constrained()->onDelete('cascade');
             $table->string('file_path');
+            $table->string('slug');
             $table->timestamps();
         });
     }

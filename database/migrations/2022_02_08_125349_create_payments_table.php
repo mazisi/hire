@@ -20,6 +20,7 @@ class CreatePaymentsTable extends Migration
             $table->string('amount');
             $table->string('status');
             $table->string('payment_method');
+            $table->string('slug');
             $table->timestamps();
         });
     }
