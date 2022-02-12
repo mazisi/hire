@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class JobDocuments extends Model
+class UserDocument extends Model
 {
     use HasFactory;
     protected $guarded = [];
